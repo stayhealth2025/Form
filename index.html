@@ -397,7 +397,7 @@
           اللياقة، أو تحسين صحتك العامة، نحن هنا لدعمك في كل خطوة. املأ الاستبيان الآن واستعد لتحقيق النتائج التي تحلم
           بها!</p>
         <div class="program-links">
-              <a href="files/FeedSample.pdf" download class="btn-primary">عينة خطة غذائية</a>
+          <a href="files/FeedSample.pdf" download class="btn-primary">عينة خطة غذائية</a>
           <a href="files/advan.pdf" download class="btn-primary">عينة خطة رياضية</a>
         </div>
       </div>
@@ -433,7 +433,7 @@
         <div class="text-center">
           <h1 class="text-4xl font-bold mb-2">برنامج التغذية واللياقة المخصص</h1>
           <p class="mb-4 text-gray-300">املأ النموذج لتحصل على خطة غذائية ورياضية أسبوعية تناسبك 100٪</p>
-          <p class="text-xl text-green-300 font-bold mb-6">🎉 عرض خاص: اشتراك 3 أشهر بـ 15 دينار فقط! 🎉</p>
+          <p class="text-xl text-green-300 font-bold mb-6">🎉 عرض خاص: اشتراك 3 أشهر بـ 20 دينار فقط! 🎉</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
@@ -457,7 +457,7 @@
           </div>
           <div>
             <label class="block mb-2">الوزن الحالي (كغ) *</label>
-            <input type="number" name="weight" class="w-full input-field" min="45" required>
+            <input type="number" name="weight" class="w-full input-field" min="40" required>
             <div class="error-message" data-for="weight"></div>
           </div>
           <div>
@@ -762,21 +762,21 @@
         <div class="grid grid-cols-1 gap-4 mb-6">
           <label
             class="flex items-center bg-white bg-opacity-10 p-4 rounded-xl cursor-pointer hover:bg-opacity-20 transition-colors">
-            <input type="radio" name="subscription" value="10"
+            <input type="radio" name="subscription" value="8"
               class="ml-4 h-5 w-5 text-green-500 rounded focus:ring-green-500" required>
-            <span class="text-lg">10 دنانير / شهر</span>
+            <span class="text-lg">8 دنانير / شهر</span>
           </label>
           <label
             class="flex items-center bg-white bg-opacity-10 p-4 rounded-xl cursor-pointer hover:bg-opacity-20 transition-colors">
-            <input type="radio" name="subscription" value="15"
+            <input type="radio" name="subscription" value="20"
               class="ml-4 h-5 w-5 text-green-500 rounded focus:ring-green-500">
-            <span class="text-lg">15 دينار / 3 أشهر <span class="text-green-300 font-bold">(عرض محدود)</span></span>
+            <span class="text-lg">20 دينار / 3 أشهر <span class="text-green-300 font-bold">(عرض محدود)</span></span>
           </label>
           <label
             class="flex items-center bg-white bg-opacity-10 p-4 rounded-xl cursor-pointer hover:bg-opacity-20 transition-colors">
-            <input type="radio" name="subscription" value="45"
+            <input type="radio" name="subscription" value="40"
               class="ml-4 h-5 w-5 text-green-500 rounded focus:ring-green-500">
-            <span class="text-lg">45 دينار / 6 أشهر</span>
+            <span class="text-lg">40 دينار / 6 أشهر</span>
           </label>
         </div>
       </div>
@@ -852,8 +852,8 @@
         if (!input.value) {
           errorMessage = "هذا الحقل مطلوب";
           isValid = false;
-        } else if (input.name === "weight" && (parseFloat(input.value) < 45 || parseFloat(input.value) > 250)) {
-          errorMessage = "الوزن يجب أن يكون بين 45 و 250 كغ";
+        } else if (input.name === "weight" && (parseFloat(input.value) < 40 || parseFloat(input.value) > 250)) {
+          errorMessage = "الوزن يجب أن يكون بين 40 و 250 كغ";
           isValid = false;
         } else if (input.name === "height" && (parseFloat(input.value) < 130 || parseFloat(input.value) > 250)) {
           errorMessage = "الطول يجب أن يكون بين 130 و 250 سم";
@@ -933,7 +933,7 @@
       ar: {
         title: "برنامج التغذية واللياقة المخصص",
         subtitle: "املأ النموذج لتحصل على خطة غذائية ورياضية أسبوعية تناسبك 100٪",
-        offer: "🎉 عرض خاص: اشتراك 3 أشهر بـ 15 دينار فقط! 🎉",
+        offer: "🎉 عرض خاص: اشتراك 3 أشهر بـ 20 دينار فقط! 🎉",
         prev: "السابق",
         next: "التالي",
         submit: "إرسال",
@@ -1148,7 +1148,7 @@
         },
         errorMessages: {
           required: "هذا الحقل مطلوب",
-          min_weight: "الوزن يجب أن لا يقل عن 45 كغ",
+          min_weight: "الوزن يجب أن لا يقل عن 40 كغ",
           min_height: "الطول يجب أن لا يقل عن 130 سم",
         },
         themeLabels: {
@@ -1159,7 +1159,7 @@
       en: {
         title: "Customized Nutrition and Fitness Program",
         subtitle: "Fill out the form to get a 100% personalized weekly nutrition and fitness plan",
-        offer: "🎉 Special Offer: 3-month subscription for only 15 JOD! 🎉",
+        offer: "🎉 Special Offer: 3-month subscription for only 20 JOD! 🎉",
         prev: "Previous",
         next: "Next",
         submit: "Submit",
@@ -1374,7 +1374,7 @@
         },
         errorMessages: {
           required: "This field is required",
-          min_weight: "Weight cannot be less than 45 kg",
+          min_weight: "Weight cannot be less than 40 kg",
           min_height: "Height cannot be less than 130 cm",
         },
         themeLabels: {
@@ -1465,12 +1465,12 @@
       document.querySelectorAll('input[type="radio"]').forEach((radio) => {
         const label = radio.closest("label");
         if (label) {
-          if (radio.value === "10") {
-            label.querySelector("span").textContent = "10 " + (lang === "ar" ? "دنانير / شهر" : "JOD / month");
-          } else if (radio.value === "15") {
-            label.querySelector("span").innerHTML = "15 " + (lang === "ar" ? 'دينار / 3 أشهر <span class="text-green-300 font-bold">(عرض محدود)</span>' : 'JOD / 3 months <span class="text-green-300 font-bold">(Limited Offer)</span>');
-          } else if (radio.value === "45") {
-            label.querySelector("span").textContent = "45 " + (lang === "ar" ? "دينار / 6 أشهر" : "JOD / 6 months");
+          if (radio.value === "8") {
+            label.querySelector("span").textContent = "8 " + (lang === "ar" ? "دنانير / شهر" : "JOD / month");
+          } else if (radio.value === "20") {
+            label.querySelector("span").innerHTML = "20 " + (lang === "ar" ? 'دينار / 3 أشهر <span class="text-green-300 font-bold">(عرض محدود)</span>' : 'JOD / 3 months <span class="text-green-300 font-bold">(Limited Offer)</span>');
+          } else if (radio.value === "40") {
+            label.querySelector("span").textContent = "40 " + (lang === "ar" ? "دينار / 6 أشهر" : "JOD / 6 months");
           }
         }
       });
@@ -1581,7 +1581,7 @@
             morning_before: "صباحًا قبل العمل", morning_after: "صباحًا بعد الإفطار", afternoon: "بعد الظهر", evening: "بعد المغرب", night: "بعد العشاء", flexible: "حسب وقت الفراغ",
             "3_5": "3–5 أكواب", "6_8": "6–8 أكواب", less_3: "أقل من 3 أكواب", more_8: "أكثر من 8 أكواب",
             home: "في المنزل", gym: "في النادي", outdoor: "في الخارج", no_preference: "لا فرق",
-            subscription: { "10": "10 دنانير / شهر", "15": "15 دينار / 3 أشهر", "45": "45 دينار / 6 أشهر" },
+            subscription: { "8": "8 دنانير / شهر", "20": "20 دينار / 3 أشهر", "40": "40 دينار / 6 أشهر" },
             knee: "مشاكل في الركب", back: "مشاكل في الظهر", breathing: "مشاكل في التنفس", fitness: "ضعف اللياقة", injury_other: "أخرى"
           };
           let answers = {};
